@@ -25,6 +25,7 @@ namespace ParkPlanner
 
         public Overview()
         {
+            
             InitializeComponent();
             brands = new VehicleBrands();
             motorcyleBrands = brands.getMotorcyleBrands();
@@ -35,7 +36,7 @@ namespace ParkPlanner
 
         private void Overview_Load(object sender, EventArgs e)
         {
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#272438");
+            this.BackColor = Color.FromArgb(14, 13, 14);
         
             availText.Text = available.ToString();
             occupiedText.Text = occupied.ToString();
@@ -77,17 +78,17 @@ namespace ParkPlanner
             // Reset color of previous active button
             if (activeButton != null)
             {
-                activeButton.BackColor = Color.FromArgb(53, 96, 208);
+                activeButton.BackColor = Color.FromArgb(166, 62, 21);
             }
 
             // Set color of current active button
             activeButton = button;
-            activeButton.BackColor = Color.DarkBlue;
+            activeButton.BackColor = Color.FromArgb(116, 12, 0);
         }
         public void setToDefault(Button button)
         {
 
-            activeButton.BackColor = Color.FromArgb(56, 96, 208);
+            activeButton.BackColor = Color.FromArgb(166, 62, 21);
             textBox1.Text = "";
             brandComboBox.Items.Clear();
             brandComboBox.Text = "Select Brand";

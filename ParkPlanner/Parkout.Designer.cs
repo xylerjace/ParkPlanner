@@ -44,6 +44,7 @@
             // 
             // label1
             // 
+            label1.BackColor = Color.Transparent;
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
@@ -55,6 +56,7 @@
             // 
             // plate
             // 
+            plate.BackColor = Color.Transparent;
             plate.AutoSize = true;
             plate.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             plate.ForeColor = Color.White;
@@ -66,6 +68,7 @@
             // 
             // label3
             // 
+            label3.BackColor = Color.Transparent;
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
@@ -77,6 +80,7 @@
             // 
             // label5
             // 
+            label5.BackColor = Color.Transparent;
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
@@ -88,6 +92,7 @@
             // 
             // label7
             // 
+            label7.BackColor = Color.Transparent;
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
@@ -99,6 +104,7 @@
             // 
             // timeIn
             // 
+            timeIn.BackColor = Color.Transparent;
             timeIn.AutoSize = true;
             timeIn.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             timeIn.ForeColor = Color.White;
@@ -110,6 +116,7 @@
             // 
             // label9
             // 
+            label9.BackColor = Color.Transparent;
             label9.AutoSize = true;
             label9.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.White;
@@ -130,7 +137,8 @@
             // 
             // button
             // 
-            button.BackColor = Color.FromArgb(78, 179, 255);
+            
+            button.BackColor = Color.FromArgb(166, 62, 21);
             button.CornerRadius = 10;
             button.FlatAppearance.BorderSize = 0;
             button.FlatStyle = FlatStyle.Flat;
@@ -146,6 +154,7 @@
             // 
             // label10
             // 
+            label10.BackColor = Color.Transparent;
             label10.AutoSize = true;
             label10.Font = new Font("Arial Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.White;
@@ -157,6 +166,7 @@
             // 
             // typeLabel
             // 
+            typeLabel.BackColor = Color.Transparent;
             typeLabel.AutoSize = true;
             typeLabel.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             typeLabel.ForeColor = Color.White;
@@ -168,6 +178,7 @@
             // 
             // brandLabel
             // 
+            brandLabel.BackColor = Color.Transparent;
             brandLabel.AutoSize = true;
             brandLabel.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             brandLabel.ForeColor = Color.White;

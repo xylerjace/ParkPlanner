@@ -22,6 +22,23 @@ namespace ParkPlanner
             path.AddArc(0, height - radius, radius, radius, 90, 90); // Bottom left corner
             path.CloseAllFigures();
             this.Region = new Region(path);
+
+            Color startColor = Color.FromArgb(132, 41, 3);
+            Color endColor = Color.Black;
+
+            // Create a linear gradient brush
+            Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
+            LinearGradientBrush brush = new LinearGradientBrush(rect, startColor, endColor, LinearGradientMode.Vertical);
+
+            // Set the blending factors
+            brush.Blend = new Blend
+            {
+                Factors = new float[] { 0.6f, 1f }, // 80% startColor, 100% endColor
+                Positions = new float[] { 0f, 1f } // Blend at the start and end
+            };
+
+            // Fill the panel with the gradient brush
+            e.Graphics.FillPath(brush, path);
         }
     }
 }

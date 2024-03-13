@@ -65,7 +65,7 @@
             // 
             // signinButton
             // 
-            signinButton.BackColor = Color.FromArgb(78, 179, 255);
+            signinButton.BackColor = Color.FromArgb(166, 62, 21);
             signinButton.CornerRadius = 30;
             signinButton.FlatAppearance.BorderSize = 0;
             signinButton.FlatStyle = FlatStyle.Flat;
@@ -81,6 +81,7 @@
             // 
             // label7
             // 
+            label7.BackColor = Color.Transparent;
             label7.AutoSize = true;
             label7.ForeColor = Color.Red;
             label7.Location = new Point(379, 216);
@@ -92,6 +93,7 @@
             // 
             // validate
             // 
+            validate.BackColor = Color.Transparent; 
             validate.AutoSize = true;
             validate.ForeColor = Color.Red;
             validate.Location = new Point(388, 216);
@@ -130,6 +132,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(413, 16);
             label6.Name = "label6";
             label6.Size = new Size(53, 19);

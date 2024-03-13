@@ -13,7 +13,7 @@ namespace ParkPlanner
         {
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#4EB3FF");
+            this.BackColor = Color.FromArgb(166, 62, 21);
         }
 
         protected override void OnPaint(PaintEventArgs e)

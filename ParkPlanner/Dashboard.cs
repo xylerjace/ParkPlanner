@@ -19,12 +19,12 @@ namespace ParkPlanner
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#272438");
+            this.BackColor = Color.FromArgb(14, 13, 14);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            panel1.BackColor = System.Drawing.ColorTranslator.FromHtml("#272438");
+            panel1.BackColor = Color.FromArgb(14, 13, 14);
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)

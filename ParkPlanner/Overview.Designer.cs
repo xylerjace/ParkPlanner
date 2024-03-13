@@ -1,4 +1,6 @@
-﻿namespace ParkPlanner
+﻿using System.Drawing;
+
+namespace ParkPlanner
 {
     partial class Overview
     {
@@ -94,7 +96,7 @@
             // 
             // parkInButton
             // 
-            parkInButton.BackColor = Color.FromArgb(53, 96, 208);
+            parkInButton.BackColor = Color.FromArgb(166, 62, 21);
             parkInButton.CornerRadius = 10;
             parkInButton.FlatAppearance.BorderSize = 0;
             parkInButton.FlatStyle = FlatStyle.Flat;
@@ -121,6 +123,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
             label7.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
             label7.Location = new Point(151, 180);
@@ -131,7 +134,7 @@
             // 
             // sedanButton
             // 
-            sedanButton.BackColor = Color.FromArgb(53, 96, 208);
+            sedanButton.BackColor = Color.FromArgb(166, 62, 21);
             sedanButton.CornerRadius = 10;
             sedanButton.FlatAppearance.BorderSize = 0;
             sedanButton.FlatStyle = FlatStyle.Flat;
@@ -147,7 +150,7 @@
             // 
             // suvButton
             // 
-            suvButton.BackColor = Color.FromArgb(53, 96, 208);
+            suvButton.BackColor = Color.FromArgb(166, 62, 21);
             suvButton.CornerRadius = 10;
             suvButton.FlatAppearance.BorderSize = 0;
             suvButton.FlatStyle = FlatStyle.Flat;
@@ -163,7 +166,7 @@
             // 
             // motorButton
             // 
-            motorButton.BackColor = Color.FromArgb(53, 96, 208);
+            motorButton.BackColor = Color.FromArgb(166, 62, 21);
             motorButton.CornerRadius = 10;
             motorButton.FlatAppearance.BorderSize = 0;
             motorButton.FlatStyle = FlatStyle.Flat;
@@ -180,6 +183,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
             label6.Location = new Point(151, 98);
@@ -199,6 +203,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
             label5.Location = new Point(175, 40);
@@ -210,6 +215,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(28, 11);
@@ -232,6 +238,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
             label3.Location = new Point(30, 98);
@@ -243,6 +250,7 @@
             // availText
             // 
             availText.AutoSize = true;
+            availText.BackColor = Color.Transparent;
             availText.Font = new Font("Arial", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             availText.ForeColor = Color.White;
             availText.Location = new Point(51, 26);
@@ -265,6 +273,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
             label4.Location = new Point(30, 86);
@@ -276,6 +285,7 @@
             // occupiedText
             // 
             occupiedText.AutoSize = true;
+            occupiedText.BackColor = Color.Transparent;
             occupiedText.Font = new Font("Arial", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             occupiedText.ForeColor = Color.White;
             occupiedText.Location = new Point(51, 19);
@@ -299,7 +309,8 @@
             // 
             // titlePanel
             // 
-            titlePanel.BackColor = Color.FromArgb(69, 68, 57);
+            titlePanel.BackColor = Color.Transparent;
+            titlePanel.BorderStyle = BorderStyle.FixedSingle;
             titlePanel.Controls.Add(label12);
             titlePanel.Controls.Add(label11);
             titlePanel.Controls.Add(label10);
@@ -312,6 +323,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
             label12.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(372, 7);
@@ -355,7 +367,7 @@
             // 
             // parkoutButton
             // 
-            parkoutButton.BackColor = Color.FromArgb(153, 116, 47);
+            parkoutButton.BackColor = Color.FromArgb(166, 62, 21);
             parkoutButton.CornerRadius = 10;
             parkoutButton.FlatAppearance.BorderSize = 0;
             parkoutButton.FlatStyle = FlatStyle.Flat;
@@ -371,21 +383,23 @@
             // 
             // parkoutList
             // 
-            parkoutList.BackColor = Color.FromArgb(255, 192, 75);
+            parkoutList.BackColor = Color.FromArgb(40, 12, 1);
             parkoutList.BorderStyle = BorderStyle.None;
             parkoutList.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            parkoutList.ForeColor = Color.Black;
+            parkoutList.ForeColor = Color.White;
             parkoutList.FormattingEnabled = true;
             parkoutList.ItemHeight = 18;
             parkoutList.Location = new Point(70, 53);
             parkoutList.Name = "parkoutList";
-            parkoutList.Size = new Size(473, 180);
+            parkoutList.Size = new Size(487, 180);
             parkoutList.TabIndex = 1;
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             label8.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(274, 0);
             label8.Name = "label8";
             label8.Size = new Size(96, 22);

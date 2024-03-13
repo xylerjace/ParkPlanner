@@ -11,20 +11,20 @@ namespace ParkPlanner
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#272438");
+            this.BackColor = Color.FromArgb(14, 13, 14);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
         {
-            LoginPanel.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFFFFF");
+            LoginPanel.BackColor = Color.Transparent;
         }
 
 
         private void leftPanel_Paint(object sender, PaintEventArgs e)
         {
-            leftPanel.BackColor = System.Drawing.ColorTranslator.FromHtml("#4EB3FF");
+            leftPanel.BackColor = Color.Transparent;
         }
 
 
