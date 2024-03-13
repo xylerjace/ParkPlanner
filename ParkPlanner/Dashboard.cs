@@ -15,6 +15,7 @@ namespace ParkPlanner
         public Dashboard()
         {
             InitializeComponent();
+            Overview overview = new Overview(this);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -32,6 +33,21 @@ namespace ParkPlanner
             LoginPage login = new LoginPage();
             login.Show();
             this.Hide();
+        }
+        public void HideDashboard()
+        {
+            this.Hide();
+        }
+
+        public void ShowDashboard()
+        {
+            this.Show();
+        }
+        public void disableLogout() { 
+            roundedButton1.Enabled = false;
+        }
+        public void enableLogout() { 
+            roundedButton1.Enabled=true;
         }
     }
 }

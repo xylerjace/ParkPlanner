@@ -24,7 +24,8 @@ namespace ParkPlanner
         int occupied;
         int available;
         Vehicle selectedVehicle;
-        public Parkout(string plateNo, string brand, string type, DateTime parkin, int flagDown, int additional, Overview overview, int occupied, int available, Vehicle selectedVehicle)
+        Dashboard dash;
+        public Parkout(string plateNo, string brand, string type, DateTime parkin, int flagDown, int additional, Overview overview, int occupied, int available, Vehicle selectedVehicle,Dashboard dash)
         {
             InitializeComponent();
             this.plateNo = plateNo;
@@ -37,6 +38,7 @@ namespace ParkPlanner
             this.occupied = occupied;
             this.available = available;
             this.selectedVehicle = selectedVehicle;
+            this.dash = dash;
 
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             // Redraw the form when resized
@@ -89,8 +91,10 @@ namespace ParkPlanner
 
                 if (hours >= 0)
                 {
+                    
+                    
                     overview.removeItem(selectedVehicle);
-                    Receipt receipt = new Receipt(plateNo, type, brand, parkin, parkOut, hours, payment);
+                    Receipt receipt = new Receipt(plateNo, type, brand, parkin, parkOut, hours, payment, overview,dash);
                     receipt.Show();
 
                     this.Hide();
@@ -112,11 +116,14 @@ namespace ParkPlanner
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            dash.enableLogout();
+
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
 
         }
+        
     }
 }

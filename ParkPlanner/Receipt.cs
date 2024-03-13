@@ -21,7 +21,9 @@ namespace ParkPlanner
         DateTime parkOut;
         int hours;
         int price;
-        public Receipt(string plateNo, string type, string brand, DateTime parkIn, DateTime parkOut, int hours, int price)
+        Overview overview;
+        Dashboard dash;
+        public Receipt(string plateNo, string type, string brand, DateTime parkIn, DateTime parkOut, int hours, int price, Overview overview, Dashboard dash)
         {
             InitializeComponent();
             this.plateNo = plateNo;
@@ -30,10 +32,13 @@ namespace ParkPlanner
             this.parkIn = parkIn;
             this.parkOut = parkOut;
             this.hours = hours;
+            this.overview = overview;
+            this.dash = dash;
             this.price = price;
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             // Redraw the form when resized
             ResizeRedraw = true;
+            this.dash = dash;
         }
 
         private void Receipt_Load(object sender, EventArgs e)
@@ -66,6 +71,11 @@ namespace ParkPlanner
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            overview.enableParkInButton();
+            overview.enableParkoutButton();
+            overview.enableTypeButtons();
+            dash.enableLogout();
+
         }
     }
 }

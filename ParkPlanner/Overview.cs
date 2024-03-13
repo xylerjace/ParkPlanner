@@ -22,8 +22,9 @@ namespace ParkPlanner
         string type;
         int available = 15;
         int occupied = 0;
+        Dashboard dashboard;
 
-        public Overview()
+        public Overview(Dashboard dashboard)
         {
 
             InitializeComponent();
@@ -31,7 +32,8 @@ namespace ParkPlanner
             motorcyleBrands = brands.getMotorcyleBrands();
             suvBrands = brands.getSuvBrands();
             sedanBrands = brands.getSedanBrands();
-            activeButton = motorButton; // Set the default active button
+            activeButton = motorButton;
+            this.dashboard = dashboard;
         }
 
         private void Overview_Load(object sender, EventArgs e)
@@ -204,7 +206,11 @@ namespace ParkPlanner
                 // Remove the selected item from the ListBox
                 //parkoutList.Items.Remove(selectedVehicle);
 
-                Parkout parkout = new Parkout(selectedVehicle.plateNo, selectedVehicle.brand, selectedVehicle.GetType().Name, selectedVehicle.getParkIn(), selectedVehicle.flagDown, selectedVehicle.additional, this, occupied, available,selectedVehicle);
+                dashboard.disableLogout();
+                disableParkInButton();
+                disableParkoutButton();
+                disableTypeButtons();
+                Parkout parkout = new Parkout(selectedVehicle.plateNo, selectedVehicle.brand, selectedVehicle.GetType().Name, selectedVehicle.getParkIn(), selectedVehicle.flagDown, selectedVehicle.additional, this, occupied, available,selectedVehicle,dashboard);
                 parkout.Show();
             }
             else
@@ -216,10 +222,40 @@ namespace ParkPlanner
         public void removeItem(Vehicle selectedVehicle) {
             parkoutList.Items.Remove(selectedVehicle);
         }
+        public void addItem(Vehicle selectedVehicle, string plate, string brand)
+        {
+            parkoutList.Items.Add(selectedVehicle);
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void disableTypeButtons()
+        {
+            motorButton.Enabled = false;
+            suvButton.Enabled = false;
+            sedanButton.Enabled = false;
+        }
+        public void enableTypeButtons()
+        {
+            motorButton.Enabled = true;
+            suvButton.Enabled = true;
+            sedanButton.Enabled = true;
+        }
+        public void disableParkInButton() { 
+            parkInButton.Enabled = false;
+        }
+        public void enableParkInButton()
+        {
+            parkInButton.Enabled = true;
+        }
+        public void enableParkoutButton() { 
+            parkoutButton.Enabled=true;
+        }
+        public void disableParkoutButton()
+        {
+            parkoutButton.Enabled = false;
         }
     }
 }

@@ -34,7 +34,7 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
-            overview1 = new Overview();
+            overview1 = new Overview(this);
             parkingSpaces1 = new ParkingSpaces();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -90,9 +90,9 @@
             label2.ForeColor = Color.Red;
             label2.Location = new Point(42, 40);
             label2.Name = "label2";
-            label2.Size = new Size(125, 30);
+            label2.Size = new Size(109, 30);
             label2.TabIndex = 1;
-            label2.Text = "PLANNER";
+            label2.Text = "PLANNE";
             // 
             // label1
             // 
@@ -118,7 +118,7 @@
             // 
             // overview1
             // 
-            overview1.BackColor = Color.FromArgb(39, 36, 56);
+            overview1.BackColor = Color.FromArgb(14, 13, 14);
             overview1.Dock = DockStyle.Fill;
             overview1.Location = new Point(0, 0);
             overview1.Name = "overview1";

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaydi\\source\\repos\\ParkingSystem\\ParkPlanner\\ParkPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\jaydi\\OneDrive\\Desktop\\pp\\pp\\ParkPlanner\\ParkPlanner.csproj",
       "projectName": "ParkPlanner",
-      "projectPath": "C:\\Users\\jaydi\\source\\repos\\ParkingSystem\\ParkPlanner\\ParkPlanner.csproj",
+      "projectPath": "C:\\Users\\jaydi\\OneDrive\\Desktop\\pp\\pp\\ParkPlanner\\ParkPlanner.csproj",
       "packagesPath": "C:\\Users\\jaydi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaydi\\source\\repos\\ParkingSystem\\ParkPlanner\\obj\\",
+      "outputPath": "C:\\Users\\jaydi\\OneDrive\\Desktop\\pp\\pp\\ParkPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jaydi\\AppData\\Roaming\\NuGet\\NuGet.Config",
